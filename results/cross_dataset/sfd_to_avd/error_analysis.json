@@ -1,0 +1,121 @@
+{
+  "evaluation_protocol": "Validation-Tuned Frozen Alert Threshold",
+  "frozen_alert_threshold": 0.5,
+  "total_test_samples": 54,
+  "false_alarm_count": 2,
+  "missed_fight_count": 22,
+  "false_alarm_rate_percent": 11.11,
+  "missed_fight_rate_percent": 61.11,
+  "reviewed_false_alarms": [
+    {
+      "video_name": "avd_nonviolent_cam2_59.mp4",
+      "dataset_source": "avd",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.5581,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "avd_nonviolent_cam2_9.mp4",
+      "dataset_source": "avd",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.5825,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    }
+  ],
+  "reviewed_missed_fights": [
+    {
+      "video_name": "avd_violent_cam1_102.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.4021,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_109.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.2957,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_110.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1827,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_111.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.3629,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_114.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1851,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_20.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.3635,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_23.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.333,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_27.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.2896,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_44.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.4266,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "avd_violent_cam1_58.mp4",
+      "dataset_source": "avd",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1961,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    }
+  ]
+}

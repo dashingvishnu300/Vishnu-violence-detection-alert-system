@@ -1,0 +1,8 @@
+Experiment,Model,Backbone,Dataset,Seq Len,Accuracy,Precision,Recall (Sensitivity),F1-Score,ROC-AUC,FPR,FNR,Rec. Thresh,Rec. F1
+sfd_cnn_lstm_16frames,CNN_LSTM,resnet18,SFD,16,72.92%,72.00%,75.00%,73.47%,0.7969,29.17%,25.00%,0.50,73.47%
+combined_vgg16_16frames,VGG16,vgg16,COMBINED,16,76.00%,75.36%,88.14%,81.25%,0.8359,41.46%,11.86%,0.50,81.25%
+avd_vgg16_16frames,VGG16,vgg16,AVD,16,88.89%,89.47%,94.44%,91.89%,0.9352,22.22%,5.56%,0.50,91.89%
+sfd_vgg16_16frames,VGG16,vgg16,SFD,16,60.42%,55.81%,100.00%,71.64%,0.7969,79.17%,0.00%,0.80,76.19%
+combined_efficientnet_16frames,EFFICIENTNET,efficientnet_b0,COMBINED,16,82.00%,84.75%,84.75%,84.75%,0.8938,21.95%,15.25%,0.50,84.75%
+sfd_efficientnet_16frames,EFFICIENTNET,efficientnet_b0,SFD,16,68.75%,62.16%,95.83%,75.41%,0.7674,58.33%,4.17%,0.50,75.41%
+combined_cnn_lstm_16frames,CNN_LSTM,resnet18,COMBINED,16,74.90%,74.82%,78.20%,76.47%,0.8203,28.69%,21.80%,0.50,76.47%

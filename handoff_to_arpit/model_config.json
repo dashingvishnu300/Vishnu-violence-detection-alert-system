@@ -1,0 +1,19 @@
+{
+  "architecture": "cnn_lstm",
+  "backbone": "resnet18",
+  "input_tensor_format": "B x T x C x H x W",
+  "sequence_length": 16,
+  "image_size": [
+    224,
+    224
+  ],
+  "feature_dimension": 512,
+  "lstm_hidden_size": 256,
+  "lstm_num_layers": 1,
+  "dropout": 0.3,
+  "number_of_classes": 2,
+  "total_parameters": 11998146,
+  "model_file_size_mb": 137.44,
+  "trained_on_dataset": "combined",
+  "output_format": "Logits [Non-Violence, Violence] -> Softmax to obtain probabilities"
+}

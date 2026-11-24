@@ -1,0 +1,42 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large model checkpoints & weights (>100MB rejected by GitHub)
+*.pth
+*.pt
+*.bin
+*.onnx
+*.engine
+*.trt
+checkpoints/
+
+# Compressed archives
+*.zip
+*.7z
+*.tar.gz
+*.rar
+
+# Video datasets (raw video files)
+data/
+data/*
+
+# IDE and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Task logs & temporary runfiles
+*.log
+

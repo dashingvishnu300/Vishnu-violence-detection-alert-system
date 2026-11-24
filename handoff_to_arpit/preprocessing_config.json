@@ -1,0 +1,27 @@
+{
+  "color_space": "RGB",
+  "resize_dimensions": [
+    224,
+    224
+  ],
+  "sequence_length_frames": 16,
+  "sampling_method": "uniform",
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "expected_tensor_shape": [
+    1,
+    16,
+    3,
+    224,
+    224
+  ],
+  "value_range": "[0.0, 1.0] before normalization"
+}

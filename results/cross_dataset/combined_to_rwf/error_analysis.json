@@ -1,0 +1,193 @@
+{
+  "evaluation_protocol": "Validation-Tuned Frozen Alert Threshold",
+  "frozen_alert_threshold": 0.5,
+  "total_test_samples": 400,
+  "false_alarm_count": 47,
+  "missed_fight_count": 54,
+  "false_alarm_rate_percent": 23.5,
+  "missed_fight_rate_percent": 27.0,
+  "reviewed_false_alarms": [
+    {
+      "video_name": "1AURh0Wj_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7971,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "1MVS2QPWbHc_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.5807,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "1MVS2QPWbHc_1.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7319,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "1W8hsVvyKt4_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7942,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "1W8hsVvyKt4_1.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.8224,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "1W8hsVvyKt4_2.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7692,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "2lrARl7utL4_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7558,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "2lrARl7utL4_1.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.749,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "2lrARl7utL4_2.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.7538,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    },
+    {
+      "video_name": "32wXo9Dt_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 0,
+      "predicted_label": 1,
+      "violence_probability": 0.6632,
+      "failure_type": "False Alarm (Type I Error)",
+      "root_cause_explanation": "Fast movement/occlusion/camera shake resembling fighting dynamics"
+    }
+  ],
+  "reviewed_missed_fights": [
+    {
+      "video_name": "1MVS2QPWbHc_5.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.2208,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1723,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_1.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1495,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_2.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1363,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_3.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1239,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_4.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1292,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "6Rl7q_kXYbg_5.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.117,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "FXC43fACfPc_0.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.4858,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "FXC43fACfPc_1.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.4465,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    },
+    {
+      "video_name": "FXC43fACfPc_2.avi",
+      "dataset_source": "rwf",
+      "actual_label": 1,
+      "predicted_label": 0,
+      "violence_probability": 0.1896,
+      "failure_type": "Missed Fight (Type II Error)",
+      "root_cause_explanation": "Low motion amplitude, subtle wrestling or poor lighting"
+    }
+  ]
+}

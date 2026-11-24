@@ -1,0 +1,75 @@
+# Suraksha-Net: Default Training Configuration
+# =============================================
+
+# Dataset
+dataset:
+  name: "rwf"                    # rwf, avd, sfd, combined
+  data_root: "data"
+  sequence_length: 16            # 8, 16, or 32 frames
+  sampling_strategy: "uniform"   # uniform, consecutive, random
+  image_size: 224
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+
+# Model
+model:
+  name: "cnn_lstm"               # vgg16, efficientnet, cnn_lstm, r3d
+  backbone: "resnet18"           # resnet18, efficientnet_b0, mobilenetv3, vgg16
+  num_classes: 2
+  pretrained: true
+  freeze_backbone: false
+  # LSTM-specific
+  lstm_hidden_size: 256
+  lstm_num_layers: 1
+  lstm_dropout: 0.3
+  # Classifier
+  classifier_dropout: 0.5
+
+# Training
+training:
+  epochs: 30
+  batch_size: 8
+  num_workers: 4
+  pin_memory: true
+  optimizer: "adamw"             # adam, adamw, sgd
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  momentum: 0.9                  # for SGD only
+  scheduler: "cosine"            # plateau, cosine, step
+  scheduler_patience: 5          # for ReduceLROnPlateau
+  scheduler_step_size: 10        # for StepLR
+  scheduler_gamma: 0.1           # for StepLR
+  early_stopping_patience: 7
+  use_amp: true                  # Automatic Mixed Precision
+  use_class_weights: false
+  gradient_clip: 1.0
+
+# Augmentation (training only)
+augmentation:
+  horizontal_flip: true
+  random_rotation: 10
+  color_jitter: true
+  brightness: 0.2
+  contrast: 0.2
+  random_erasing: false
+
+# Evaluation
+evaluation:
+  thresholds: [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  save_false_positives: true
+  save_false_negatives: true
+  generate_gradcam: true
+
+# Experiment
+experiment:
+  name: "default"
+  seed: 42
+  save_dir: "experiments"
+  log_interval: 10               # print every N batches
+
+# Normalization (ImageNet)
+normalization:
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+

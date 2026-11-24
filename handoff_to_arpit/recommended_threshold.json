@@ -1,0 +1,59 @@
+{
+  "calibrated_validation_threshold": 0.30,
+  "standard_threshold": 0.50,
+  "recommended_deployment_threshold": 0.30,
+  "justification": "Calibrated on the 3-dataset validation set (SFD + AIRTLab + RWF-2000, 315 videos) and frozen before evaluating on 510 untouched test videos. At 0.30 threshold, it catches 91.35% of all real violent altercations (Recall 91.35%) with zero missed fights in SFD and AIRTLab.",
+  "metrics_at_calibrated_threshold_0_30": {
+    "total_test_videos": 510,
+    "accuracy": 0.7412,
+    "precision": 0.6903,
+    "recall": 0.9135,
+    "f1": 0.7864,
+    "roc_auc": 0.8203,
+    "false_positives": 109,
+    "false_negatives": 23,
+    "per_dataset_breakdown": {
+      "airtlab_avd": {
+        "test_clips": 54,
+        "accuracy": 0.7407,
+        "precision": 0.7200,
+        "recall": 1.0000,
+        "f1": 0.8372,
+        "roc_auc": 0.9059,
+        "false_alarms": 14,
+        "missed_fights": 0
+      },
+      "rwf_2000": {
+        "test_clips": 400,
+        "accuracy": 0.7575,
+        "precision": 0.7052,
+        "recall": 0.8850,
+        "f1": 0.7849,
+        "roc_auc": 0.8318,
+        "false_alarms": 74,
+        "missed_fights": 23
+      },
+      "sfd": {
+        "test_clips": 56,
+        "accuracy": 0.6250,
+        "precision": 0.5882,
+        "recall": 1.0000,
+        "f1": 0.7407,
+        "roc_auc": 0.7962,
+        "false_alarms": 21,
+        "missed_fights": 0
+      }
+    }
+  },
+  "metrics_at_standard_threshold_0_50": {
+    "total_test_videos": 510,
+    "accuracy": 0.7490,
+    "precision": 0.7482,
+    "recall": 0.7820,
+    "f1": 0.7647,
+    "roc_auc": 0.8203,
+    "false_positives": 70,
+    "false_negatives": 58
+  },
+  "deployment_rule": "if violence_prob >= 0.30: TRIGGER_SECURITY_ALERT(level='HIGH') else: NORMAL_STATE"
+}

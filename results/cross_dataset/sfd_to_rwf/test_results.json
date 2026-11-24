@@ -1,0 +1,59 @@
+{
+  "metrics_at_default_0_5": {
+    "accuracy": 0.6525,
+    "precision": 0.7606837606837606,
+    "recall": 0.445,
+    "f1": 0.5615141955835962,
+    "sensitivity": 0.445,
+    "specificity": 0.86,
+    "roc_auc": 0.7039249999999999,
+    "false_positive_rate": 0.14,
+    "false_negative_rate": 0.555,
+    "true_positives": 89,
+    "true_negatives": 172,
+    "false_positives": 28,
+    "false_negatives": 111
+  },
+  "frozen_validation_threshold": 0.5,
+  "metrics_at_frozen_threshold": {
+    "accuracy": 0.6525,
+    "precision": 0.7606837606837606,
+    "recall": 0.445,
+    "f1": 0.5615141955835962,
+    "sensitivity": 0.445,
+    "specificity": 0.86,
+    "roc_auc": 0.7039249999999999,
+    "false_positive_rate": 0.14,
+    "false_negative_rate": 0.555,
+    "true_positives": 89,
+    "true_negatives": 172,
+    "false_positives": 28,
+    "false_negatives": 111
+  },
+  "per_dataset_metrics": {
+    "rwf": {
+      "accuracy": 0.6525,
+      "precision": 0.7606837606837606,
+      "recall": 0.445,
+      "f1": 0.5615141955835962,
+      "sensitivity": 0.445,
+      "specificity": 0.86,
+      "roc_auc": 0.7039249999999999,
+      "false_positive_rate": 0.14,
+      "false_negative_rate": 0.555,
+      "true_positives": 89,
+      "true_negatives": 172,
+      "false_positives": 28,
+      "false_negatives": 111
+    }
+  },
+  "validation_threshold_sweep": {},
+  "error_analysis_summary": {
+    "false_alarms": 28,
+    "missed_fights": 111,
+    "precision": 0.7606837606837606,
+    "violence_recall": 0.445,
+    "f1": 0.5615141955835962,
+    "fpr": 0.14
+  }
+}

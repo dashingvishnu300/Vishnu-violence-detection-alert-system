@@ -1,0 +1,3 @@
+Train Dataset,Test Dataset,Accuracy,Precision,Recall (Sensitivity),F1-Score,ROC-AUC,FP Count,FN Count
+SFD,RWF,65.25%,76.07%,44.50%,56.15%,0.7039,28,111
+SFD,AVD,55.56%,87.50%,38.89%,53.85%,0.5340,2,22
